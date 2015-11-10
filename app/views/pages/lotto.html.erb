@@ -1,0 +1,11 @@
+<h1>These are the luckiest lotto numbers ever:</h1>
+<p><%= @lotto_numbers %></p>
+
+<table>
+  <% @lotto_numbers.each_with_index do |number, index| %>
+    <tr>
+      <td><%= index + 1 %>.)</td>
+      <td><%= number %></td>
+    </tr>
+  <% end %>
+</table>
